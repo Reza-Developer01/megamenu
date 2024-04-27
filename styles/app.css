@@ -161,13 +161,86 @@ table {
 body {
     font-family: "IranYekanX-Regular";
     line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #1D2939;
 }
 
 .icon-pack {
     display: none;
 }
 
+svg {
+    width: 24px;
+    height: 24px;
+}
+
 .container {
     width: 1216px;
     margin: 0 auto;
 }
+
+/* ==== Start ==== */
+.header {
+    background: #FFFFFF;
+    height: 80px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.wrapper__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    width: 48px;
+    height: 48px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 38px;
+    gap: 24px;
+}
+
+.menu__item {}
+
+.menu__link {
+    text-decoration: none;
+    font-family: "IranYekanX-Medium";
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color ease-in 100ms;
+}
+
+.menu__link:hover {
+    color: #FF74D8;
+}
+
+.menu__link svg {
+    transition: transform ease-in 100ms;
+}
+
+.menu__link:hover svg {
+    transform: rotate(180deg);
+}
+
+.menu__link-icon {
+    width: 14px;
+    height: 14px;
+}
+
+.wrapper__left {
+    display: flex;
+    align-items: center;
+}
+
+/* ==== Header ==== */
