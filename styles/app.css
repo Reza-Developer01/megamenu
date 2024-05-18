@@ -179,6 +179,12 @@ svg {
     margin: 0 auto;
 }
 
+.ss02 {
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+}
+
 /* ==== Start ==== */
 .header {
     background: #FFFFFF;
@@ -241,6 +247,52 @@ svg {
 .wrapper__left {
     display: flex;
     align-items: center;
+    gap: 16px;
 }
+
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #1D2939;
+    border: 1px solid #E5E5E5;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+}
+
+.header-item__icon {}
+
+.header-item__badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    border-radius: 100%;
+    width: 22px;
+    height: 22px;
+    background-color: #FF74D8;
+    font-family: "IranYekanX-Medium";
+    font-size: 10px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+.header-login {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background-color: #7F56D9;
+    color: #FFFFFF;
+    font-family: "IranYekanX-Medium";
+    text-decoration: none;
+}
+
+.header-login__icon {}
 
 /* ==== Header ==== */
