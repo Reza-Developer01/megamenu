@@ -175,6 +175,7 @@ svg {
 }
 
 .container {
+    position: relative;
     width: 1216px;
     margin: 0 auto;
 }
@@ -215,7 +216,9 @@ svg {
     gap: 24px;
 }
 
-.menu__item {}
+.menu__item {
+    height: 80px;
+}
 
 .menu__link {
     text-decoration: none;
@@ -225,23 +228,149 @@ svg {
     align-items: center;
     gap: 6px;
     transition: color ease-in 100ms;
-}
-
-.menu__link:hover {
-    color: #FF74D8;
+    height: 100%;
 }
 
 .menu__link svg {
     transition: transform ease-in 100ms;
 }
 
-.menu__link:hover svg {
-    transform: rotate(180deg);
-}
-
 .menu__link-icon {
     width: 14px;
     height: 14px;
+}
+
+.menu__item:hover .menu__link {
+    color: #FF74D8;
+}
+
+.menu__item:hover .menu__link svg {
+    transform: rotate(180deg);
+}
+
+.menu__item:hover>.submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    left: 0;
+    padding: 20px;
+    border-radius: 0 0 16px 16px;
+    background-color: #FFFFFF;
+    height: 374px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0px 20px 50px 0px #0000000F inset;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in 100ms;
+}
+
+.submenu__wrapper {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.submenu__col {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1 0;
+}
+
+.submenu__row {
+    position: relative;
+    height: 100%;
+}
+
+.submenu__row--first::after,
+.submenu__row--last::after,
+.submenu__row--first::before,
+.submenu__row--last::before {
+    content: "";
+    position: absolute;
+}
+
+.submenu__row--first::after,
+.submenu__row--last::after {
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-image: linear-gradient(#E5E5E5 50%, #FFFFFF 50%);
+    background-size: 1px 14px;
+    background-repeat: repeat-y;
+}
+
+.submenu__row--first::before,
+.submenu__row--last::before {
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #E5E5E5 50%, #FFFFFF 50%);
+    background-size: 14px 1px;
+    background-repeat: repeat-x;
+    background-position: right;
+}
+
+.submenu__row--first::after {
+    left: -20px;
+}
+
+.submenu__row--first::before {
+    bottom: -20px;
+}
+
+.submenu__row--last::after {
+    right: -20px;
+}
+
+.submenu__row--last::before {
+    top: -20px;
+}
+
+.submenu__head {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.submenu__section-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.submenu__section-title {
+    font-family: "IranYekanX-Bold";
+}
+
+.submenu__links {
+    margin-top: 16px;
+    font-family: "IranYekanX-Medium";
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 18px;
+    column-gap: 12px;
+}
+
+.submenu__link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #667085;
+    transition: color ease-in 100ms;
+}
+
+.submenu__link:hover {
+    color: #FF74D8;
+}
+
+.submenu__img {
+    border-radius: 14px;
+
 }
 
 .wrapper__left {
