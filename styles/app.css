@@ -175,9 +175,11 @@ svg {
 }
 
 .container {
+    width: 100%;
     position: relative;
-    width: 1216px;
     margin: 0 auto;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 .ss02 {
@@ -425,3 +427,25 @@ svg {
 .header-login__icon {}
 
 /* ==== Header ==== */
+
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 992px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1216px;
+        width: 100%;
+    }
+}
