@@ -78,8 +78,7 @@
             <path opacity="0.4" d="M22 22L20 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
         </symbol>
-        <symbol id="shopping-bag" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+        <symbol id="shopping-bag" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M8.40002 6.5H15.6C19 6.5 19.34 8.09 19.57 10.03L20.47 17.53C20.76 19.99 20 22 16.5 22H7.51003C4.00003 22 3.24002 19.99 3.54002 17.53L4.44003 10.03C4.66003 8.09 5.00002 6.5 8.40002 6.5Z"
                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -260,7 +259,7 @@
                                                 <a href="#" class="submenu__link">لباس ورزشی زنانه و مردانه </a>
                                                 <a href="#" class="submenu__link">زیور آلات طلا زنانه</a>
                                                 <a href="#" class="submenu__link">کلاه,شال و روسری</a>
-                                                <a href="#" class="submenu__link">عینک مردانه  و زنانه</a>
+                                                <a href="#" class="submenu__link">عینک مردانه و زنانه</a>
                                                 <a href="#" class="submenu__link">ساعت زنانه و مردانه</a>
                                             </div>
                                         </div>
@@ -307,6 +306,62 @@
         </div>
     </header>
     <!-- ==== Finish Header ==== -->
+
+
+    <!-- ==== Start Mobile Nav ==== -->
+    <div class="nav">
+        <div class="nav__wrapper">
+            <!-- right -->
+            <div class="nav__right">
+                <a href="#" class="nav__link">
+                    <svg class="nav__link-icon">
+                        <use href="#shopping-bag"></use>
+                    </svg>
+                    <span class="nav__link-title">سبد خرید</span>
+                    <svg class="nav__link-active-curve">
+                        <use href="#active-curve"></use>
+                    </svg>
+                </a>
+                <a href="#" class="nav__link nav__link--active">
+                    <svg class="nav__link-icon">
+                        <use href="#discount-shape"></use>
+                    </svg>
+                    <span class="nav__link-title">تخفیفات</span>
+                    <svg class="nav__link-active-curve">
+                        <use href="#active-curve"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- left -->
+            <div class="nav__left">
+                <a href="#" class="nav__link">
+                    <svg class="nav__link-icon">
+                        <use href="#user-octagon"></use>
+                    </svg>
+                    <span class="nav__link-title">کلاب</span>
+                </a>
+                <svg class="nav__link-active-curve">
+                    <use href="#active-curve"></use>
+                </svg>
+                <a href="#" class="nav__link">
+                    <svg class="nav__link-icon">
+                        <use href="#search-normal"></use>
+                    </svg>
+                    <span class="nav__link-title">جستجو</span>
+                    <svg class="nav__link-active-curve">
+                        <use href="#active-curve"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- center curve -->
+            <svg class="center-curve">
+                <use href="#center-curve"></use>
+            </svg>
+        </div>
+    </div>
+    <!-- ==== Finish Mobile Nav ==== -->
 
 
 </body>
