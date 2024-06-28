@@ -428,19 +428,21 @@ svg {
 
 .nav {
     display: none;
-    background-color: #1D2939;
-    border-radius: 8px;
     position: fixed;
-    right: 16px;
-    left: 16px;
-    bottom: 16px;
-    padding: 10px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 16px;
+    background-color: #FFFFFF;
 }
 
 .nav__wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
+    background-color: #1D2939;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .nav__right,
@@ -488,13 +490,34 @@ svg {
 
 .center-curve {
     position: absolute;
-    top: -10px;
+    top: 0;
     right: 0;
     left: 0;
     margin: 0 auto;
     width: 100px;
     height: 38px;
 }
+
+.nav__btn {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    background-color: #7F56D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: -32px;
+}
+
+.nav__btn-icon {
+    color: #FFFFFF;
+}
+
+.nav__btn-icon svg {}
 
 /* ==== Header ==== */
 
